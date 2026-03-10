@@ -1,6 +1,5 @@
 import json
 import os
-from xml.etree.ElementTree import indent
 
 from task import Task
 
@@ -23,9 +22,11 @@ def add_task(task_description):
         with open("./tasks.json", "w") as whrite_file:
             json.dump(tasks, whrite_file, indent=4)
     else:
+        tasks = []
         new_task = Task(1 , task_description)
+        tasks.append(new_task.get_json_string())
         with open("./tasks.json", "w") as whrite_file:
-            json.dump(new_task.get_json_string(), whrite_file, indent=4)
+            json.dump(tasks, whrite_file, indent=4)
 
     return f"task added: {task_description}"
 

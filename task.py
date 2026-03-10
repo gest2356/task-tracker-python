@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 class Task:
-    def __init__(self, task_id, description, status="ToDo", created_at=None, updated_at=None):
+    def __init__(self, task_id, description, status="todo", created_at=None, updated_at=None):
         self.id = task_id
         self.description = description
         self.status = status
