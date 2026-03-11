@@ -2,4 +2,4 @@ This project is my take on the roadmap.sh task tracker project in Python, which 
 
 project: https://roadmap.sh/projects/task-tracker
 
-Give it a show yourself. :)
+Give it a shot for yourself. :)
